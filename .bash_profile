@@ -1,6 +1,6 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.6*`
+export PATH="$HOME/.rvm/bin:$HOME/bin:$PATH"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7*`
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -41,3 +41,5 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Autocomplete for 'g' as well
 complete -o default -o nospace -F _git g
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
